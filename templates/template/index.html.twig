@@ -1,0 +1,308 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Your Personnality {% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/template/styles.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/template/main.css') }}"/>
+
+{% endblock %}
+{% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+<body class="is-preload">
+<!-- Header section -->
+<section id="header" class="dark">
+    <!-- nav bar section -->
+    <? php include_once 'fragments/navbar.php'  ?>
+    <header>
+        <h1>Type Zero</h1>
+    </header>
+    <footer>
+        <a href="#first" class="button scrolly">Discover</a>
+    </footer>
+</section>
+<!-- First -->
+<section id="first" class="main">
+    <header>
+        <div class="container">
+            <h2>What is an Enneagram Type 0 ?</h2>
+            <p>
+                None ...
+            </p>
+        </div>
+    </header>
+    <div class="content dark style1 featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                <span class="feature-icon"
+                ><span class="icon fa-clock"></span
+                    ></span>
+                        <header>
+                            <h3>Growth</h3>
+                        </header>
+                       <ul class="growth">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+           </ul> 
+                       
+                    </section>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <section>
+                <span class="feature-icon"
+                ><span class="icon solid fa-bolt"></span
+                    ></span>
+                        <header>
+                            <h3>Strengths</h3>
+                        </header>
+                        <ul class="strength">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+           </ul> 
+                    </section>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <section>
+                <span class="feature-icon"
+                ><span class="icon solid fa-cloud"></span
+                    ></span>
+                        <header>
+                            <h3>Weaknesses</h3>
+                        </header>
+                        <ul class="weaknesses">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+           </ul> 
+                       
+                    </section>
+                </div>
+                <div class="col-12">
+                    <footer>
+                        <a href="#second" class="button scrolly"
+                        >Learn more</a
+                        >
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Second -->
+<section id="second" class="main">
+    <header>
+        <div class="container">
+            <h2>Enneagram 0 Personality Traits</h2>
+            <p style="white-space: pre-line">
+                None ...
+            </p>
+        </div>
+    </header>
+    <div class="content dark style2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <h3>Enneagram 0 Careers</h3>
+                        <p class="career1">
+                            None ...
+                        </p>
+                        <p class="career2">
+                            None ...
+                        </p>
+                        <p class="career3">
+                            None ...
+                        </p>
+                        
+                    </section>
+                </div>
+                <div class="col-8 col-12-narrow">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-1.jpg') }}"
+                                /></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-2.jpg') }}" alt=""
+                                /></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-3.jpg') }}" alt=""
+                                /></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-1.jpg') }}" alt=""
+                                /></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-1.jpg.jpg') }}" alt=""
+                                /></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="image fit"
+                            ><img src="{{ asset('images/portrait-5.jpg') }}" alt=""
+                                /></a>
+                        </div>
+                        <footer>
+                            <a href="#third" class="button scrolly"
+                            >Learn more</a
+                            >
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Third -->
+<section id="third" class="main">
+    <header>
+        <div class="container">
+            <h2>Enneagram 0 Relationships (Professional)</h2>
+            <p class="pro">
+                None ...
+            </p>
+            <h2>Enneagram 0 Relationships (Romantic)</h2>
+            <p class="romantic">
+                None ...
+            </p>
+        </div>
+    </header>
+    <div class="content dark style3">
+        <div class="container">
+          <span class="image featured"
+          ><img src="{{ asset('images/portrait-3.jpg') }}" alt=""
+              /></span>
+            <div class="row">
+                <div class="col-12 col-12-narrow">
+                    <h3 style="text-align:center;">Overview 0</h3>
+                    <p>
+                        There is an internal structure within each personality type. 
+                        That structure is the continuum of behaviors, attitudes, defenses, and motivations formed
+                        by the nine Levels of Development which make up the personality type itself. 
+                        This discovery (and the working out of all the traits that comprise each type) was
+                        originally made by Don Riso in 1977, and was further developed by Don with Russ Hudson 
+                        in the 1990s. They are the only Enneagram teachers to include this important factor in 
+                        their treatment of the Enneagram. The Levels are an important contribution not only to 
+                        the Enneagram but to ego psychology — and the personality types of the Enneagram cannot 
+                        be adequately explained without them. The Levels account for differences between people 
+                        of the same type as well as how people change both for better or worse. Thus, they can 
+                        also help therapists and counselors pinpoint what is actually going on with clients 
+                        and suggest solutions to the problems they are having.
+                    </p>
+                    <p>
+                        The Levels of Development provide a framework for seeing how all of the different traits that comprise each type fit into a large whole; they are a way of conceptualizing the underlying “skeletal” structure of each type. Without the Levels, the types can seem to be an arbitrary collection of unrelated traits, with contradictory behaviors and attitudes often part of the picture. But by understanding the Levels for each type, one can see how all of the traits are interrelated—and how healthy traits can deteriorate into average traits and possibly into unhealthy ones. As pioneering consciousness philosopher Ken Wilber has noted, without the Levels, the Enneagram is reduced to a “horizontal” set of nine discrete categories. By including the Levels, however, a “vertical” dimension is added that not only reflects the complexity of human nature, but goes far in explaining many different, important elements within personality.
+                    </p>
+                </div>
+                
+                
+                    
+                    <footer>
+                        <a href="#fourth" class="button scrolly" 
+                        >Give us Your feedback</a
+                        >
+                    </footer>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if app.user %}
+
+    <section style="padding-left : 25vw;padding-right: 25vw; height: 300px;padding-top:40px;">
+        {{ form_start(commentForm) }}
+        {% set full = app.user.Name ~ " " ~ app.user.LastName %}
+        {{ form_row(commentForm.author,{'attr': {'placeholder': "Your Name", 'value':full }})}}
+        {{ form_row(commentForm.content,{'attr':{'placeholder': "Your Feedback"}}) }}
+        <button type="submit" class="btn btn-success">Submit Feedback ! </button>
+        {{ form_end(commentForm) }}
+    </section>
+{% else %}
+    <header>
+            <div class="container">
+                <h2>
+                    Your Feedback is Important to Us
+                </h2>
+                <p>
+                   Sign in to comment !
+                </p>
+                <a class="btn btn-primary" href="{{ path("login")}}">Sign in</a>
+            </div>
+        </header>
+{% endif %}
+<section id ="commentaires">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Comments List</h4>
+    {% for comment in Comments  %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card card-white post">
+                            <div class="post-heading">
+                                <div class="float-left image">
+                                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                </div>
+                                <div class="float-left meta">
+                                    <div class="title h5">
+                                        <a href="#"><b>{{ comment.author}}</b></a>
+                                        made a post.
+                                    </div>
+                            <div class="post-description">
+                                <p> {{ comment.content }} </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+        </div>
+    </div>
+</section>
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
+</body>
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/template/personality.js') }}"></script>
+    <script src="{{ asset('js/template/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('js/template/browser.min.js') }}"></script>
+    <script src="{{ asset('js/template/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/template/jquery.scrolly.min.js') }}"></script>
+    <script src="{{ asset('js/template/main.js') }}"></script>
+    <script src="{{ asset('js/template/util.js') }}"></script>
+    <script src="{{ asset('js/template/templateGenerator.js') }}"></script>
+    <script>
+        showQuestions('{{ personality }}')
+    </script>
+{% endblock %}
+{% endblock %}
+
+
+
+
+
+

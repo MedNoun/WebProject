@@ -1,0 +1,39 @@
+
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Homepage{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="{{ asset('css/homepage/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/homepage/stylesCarousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/homepage/signUp/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/homepage/signUp/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+
+    <div class="formContent" >{{ form(form) }}</div>
+
+    <!-- Header section  -->
+    <section id="header">
+        <div class="header-content row">
+        </div>
+    </section>
+
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="{{ asset('js/carousel/script.js') }}"></script>
+{% endblock %}
